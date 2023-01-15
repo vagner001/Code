@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String nome;
+		int nota1, nota2, nota3, nota4, CalcularMedia;
+		String resultado;
+		
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Digite o seu nome aluno: ");
+		nome = teclado.nextLine();
+		
+		System.out.println("Qual e a primeira nota: ");
+		nota1 = teclado.nextInt();
+		
+		System.out.println("Qual e a segunda nota: ");
+		nota2 = teclado.nextInt();
+		
+		System.out.println("Qual e a terceira nota: ");
+		nota3 = teclado.nextInt();
+		
+		System.out.println("Qual e a quarta nota: ");
+		nota4 = teclado.nextInt();
+		
+		CalcularMedia = (nota1+nota2+nota3+nota4) / 4; 
+						
+		if (CalcularMedia < 5) {
+		resultado = "Infelizmente, voce foi reprovado";
+			System.out.println("\n		======== No resultado final ========");
+			System.out.println("Nome do aluno: "+nome+ "\nAs notas: "+nota1+", "+nota2+", "+nota3+" e "+nota4+"\nA sua media final e: " +CalcularMedia+"\n"+resultado);
+		}
+		else if (CalcularMedia == 5 && CalcularMedia < 6) {
+			
+		resultado = "Voce tem que fazer a recuperacao";
+			System.out.println("\n		======== No resultado final ========");
+			System.out.println("Nome do aluno: "+nome+ "\nAs notas: "+nota1+", "+nota2+", "+nota3+" e "+nota4+"\nA sua media final e: " +CalcularMedia+"\n"+resultado);
+		}
+		else 
+		{
+		resultado = "Parabens, voce foi aprovado!";
+			System.out.println("\n		======== No resultado final ========");
+			System.out.println("Nome do aluno: "+nome+ "\nAs notas: "+nota1+", "+nota2+", "+nota3+" e "+nota4+"\nA sua media final e: " +CalcularMedia+"\n"+resultado);
+		}
+	}			
+}
+
