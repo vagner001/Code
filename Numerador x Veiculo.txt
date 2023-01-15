@@ -1,0 +1,14 @@
+
+public class Main {
+
+			public static void main(String[] args) {
+				
+				String[] veiculo = {"HB20", "Uno", "Gol", "Sandeiro", "C3", "Opala", "Tempra"}; {
+				int[] numerador = {1, 2, 3, 4, 5, 6, 7};
+		        for (int contador = 0; contador <= numerador.length; contador++)
+		        
+					System.out.println(numerador[contador]+" - " +veiculo[contador]);
+					
+				}
+			}
+		}
